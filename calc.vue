@@ -1,7 +1,7 @@
 <template>
-  <div style="text-align: center;">
-    <input type="number" v-model.number="bilangan1" placeholder="Masukkan bilangan 1">
-    <input type="number" v-model.number="bilangan2" placeholder="Masukkan bilangan 2">
+  <div>
+    <input type="textarea" v-model.number="bilangan1" placeholder="Masukkan bilangan 1 ">
+    <input type="textarea" v-model.number="bilangan2" placeholder="Masukkan bilangan 2 ">
     <button @click="hitung">HITUNG</button>
     <input type="number" :value="hasil" disabled>
   </div>
@@ -11,8 +11,8 @@
 export default {
   data() {
     return {
-      bilangan1: 0,
-      bilangan2: 0,
+      bilangan1: ' ',
+      bilangan2: ' ',
       hasil: 0
     }
   },
